@@ -1,0 +1,18 @@
+[package]
+name = "schindel"
+version = "0.1.0"
+edition = "2021"
+
+license = "Unlicense"
+description = "rust min-shingle hashing"
+readme = "README.md"
+
+homepage = "https://github.com/dapper91/schindel"
+documentation = "https://docs.rs/schindel/"
+repository = "https://github.com/dapper91/schindel"
+
+categories = ["algorithms", "text-processing"]
+keywords = ["shingles", "minshingle", "ngrams", "fuzzy", "search", "hashing", "duplicates"]
+
+[dependencies]
+murmurhash3 = "0.0.5"
