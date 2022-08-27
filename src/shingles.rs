@@ -89,6 +89,14 @@ where
     }
 }
 
+impl<H, const N: usize, const L: usize> From<[u32; N]> for MinShingleHash<H, N, L>
+where H: SeedHasher
+{
+    fn from(hash: [u32; N]) -> Self {
+        MinShingleHash { hash, seed_hasher: PhantomData }
+    }
+}
+
 impl<H, const N: usize, const L: usize> IntoIterator for MinShingleHash<H, N, L>
 where
     H: SeedHasher,
